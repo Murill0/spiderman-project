@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  border: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ body{
+  background-image: url("../src/img/fundo.png");
+  background-size: cover cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} 
+
+body{
+  background-color: rgb(51, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.meio {
+  border-top: 2px solid #FFFFFF;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  padding: 10% 0 0 16%;
+}
+
+button{
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin-left: 15%;
+  margin-top: 4%;
+  width: 392px;
+  height: 58px;
+}
+
+.meio-logo-botao{
+  background: linear-gradient(180deg, #127FAE 0%, #030F6D 100%);
+  border: 0;
+  font-size: 29px;
+  font-family: 'Good Times';
   color: white;
+  border-radius: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.meio-logo-imagem{
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.homemaranha-imagem{
+  z-index: 1;
+  top: 0px;
+  position: absolute; 
+  height: 600px;
+
+}
+
+.homemaranha{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 17%;
+} 
+
+.homemaranha2{
+  display: none;
+}
+
+.footer{
+  border-top: solid 3px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 180px;
+  gap: 10px;
+}
+
+.footer p {
+  font-family: 'Bebas Neue';
+  color: white;
+  font-size: 20px;
+}
+
+.navbar{
+  z-index: 1;
+}
+
+.cabecalho{
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1493px) {
+  .homemaranha-imagem{
+    z-index: 1;
+    top: 0px;
+    position: absolute; 
+    height: 600px;
+    left: 35%;
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+}
+
+@media screen and (max-width: 1262px) {
+  .homemaranha-imagem{
+    display: none;
   }
+  
+  .meio {
+    border-top: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 10% 0 0 0%;
+  }
+
+  
+}
+
+@media screen and (max-width: 970px) {
+  .meio-logo-imagem{
+    height: 150px;
+  }
+
+  .meio-logo-botao button{
+    position: absolute;
+    left: 10%;
+  }
+
+  .meio-logo-botao{
+    position: relative;
+    right: 10%;
+    font-size: 23px;
+  }
+
+
+  .meio {
+    padding-top: 20%;
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 550px) {
+  .meio {
+    padding-top: 30%;
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 435px) {
+  .meio {
+    padding-top: 40%;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .meio-logo-botao{
+    left: 6%;
+    font-size: 15px;
+  }
+  
+  button{
+    width: 200px;
+  }
+
+  .meio-logo-imagem{
+    height: 130px;
+  }
+
 }

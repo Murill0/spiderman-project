@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    border: 0;
+  }
+  
+  /* body{
+    background-image: url(../src/img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-color: black;
+  } */
+  
+  body{
+    background-color: black;
+  }
+  
+  .cabecalho{
+    background-color: rgb(179, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+  }
+  
+  .navegacao{
+    display: flex;
+    gap: 50px;
+  }
+  
+  .navegacao a{
+
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: 'Good Times';
+  }
+
+.dropdown{
+  display: none;
+}
+
+@media screen and (max-width: 970px) {
+ .dropdown{
+  display: block;
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+  flex-direction: column;
+ }
+
+ .navegacao{
+  display: none;
+ }
+
+ .cabecalho{
+  background-color: rgb(179, 0, 0, 0.322);
+ }
+
+ .dropdown p{
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+ }
+
+ .dropdown a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  z-index: 2  ;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: 'Good Times';
+  
+ }
+
+ button{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+ }
+
+
+
+}
+
+@media screen and (max-width: 550px) {
+  button {
+    width: 10px;
+  }
+  
+}
